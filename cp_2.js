@@ -46,7 +46,7 @@ function fetchProductsThen() {
 // Fetch products using async/await
 async function fetchProductsAsync() {
     try {
-        const response = await fetch(apri_url);
+        const response = await fetch(api_url);
         if (!response.ok) {
             throw new Error('Network response was not ok');
         }
@@ -59,4 +59,5 @@ async function fetchProductsAsync() {
 
 // Call both functions
 fetchProductsThen();
+
 fetchProductsAsync();
